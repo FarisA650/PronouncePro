@@ -3,7 +3,7 @@ import 'package:hive/hive.dart';
 import 'package:pronouncepro/models/courses.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:pronouncepro/user_screens/drawer.dart';
-import 'package:pronouncepro/user_screens/home.dart';
+import 'package:pronouncepro/user_screens/navigation.dart';
 
 class Progress extends StatefulWidget {
   @override
@@ -41,7 +41,7 @@ class ProgressState extends State<Progress> {
           Row(
             children: [
               GestureDetector(
-                onTap : () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Home())),
+                onTap : () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Navigation())),
                 child: const Icon(Icons.home, color: Colors.white)
               ),
               const SizedBox(width: 15)

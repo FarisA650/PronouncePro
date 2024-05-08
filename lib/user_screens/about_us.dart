@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pronouncepro/user_screens/drawer.dart';
-import 'package:pronouncepro/user_screens/home.dart';
+import 'package:pronouncepro/user_screens/navigation.dart';
 
 class AboutUs extends StatelessWidget {
   @override
@@ -16,7 +16,7 @@ class AboutUs extends StatelessWidget {
             children: [
               GestureDetector(
                 onTap: () {
-                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Home()));
+                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Navigation()));
                 },
                 child: const Icon(Icons.home, color: Colors.white)
               ),

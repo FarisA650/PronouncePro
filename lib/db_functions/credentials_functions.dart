@@ -58,6 +58,7 @@ logIn(BuildContext context, String email, String password) async {
         (credentials) => credentials.email == email && credentials.password == password
     );
 
+    // ignore: unnecessary_null_comparison
     if (existingCredentials != null) {
       debugPrint("Entered credentials are already present in the database!");
       // ignore: use_build_context_synchronously

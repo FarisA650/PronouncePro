@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:pronouncepro/db_functions/credentials_functions.dart';
 import 'package:pronouncepro/splash_screen.dart';
-import 'package:pronouncepro/user_screens/home.dart';
+import 'package:pronouncepro/user_screens/navigation.dart';
 import 'package:pronouncepro/ui_elements.dart';
 import 'package:pronouncepro/user_screens/sign_up.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -121,7 +121,7 @@ class DetailsState extends State<Details> {
                       prefs.setString(SplashScreenState.KEY_LOGIN, 'userLoggedIn');
                       // ignore: use_build_context_synchronously
                       Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
-                        return Home();
+                        return Navigation();
                       }));
                     }
                   ),

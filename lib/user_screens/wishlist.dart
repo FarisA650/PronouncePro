@@ -3,7 +3,7 @@ import 'package:hive/hive.dart';
 import 'package:pronouncepro/models/courses.dart';
 import 'package:pronouncepro/user_screens/drawer.dart';
 import 'package:pronouncepro/user_screens/enroll.dart';
-import 'package:pronouncepro/user_screens/home.dart';
+import 'package:pronouncepro/user_screens/navigation.dart';
 
 class WishList extends StatefulWidget {
   @override
@@ -41,7 +41,7 @@ class WishListState extends State<WishList> {
           Row(
             children: [
               GestureDetector(
-                onTap : () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Home())),
+                onTap : () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Navigation())),
                 child: const Icon(Icons.home, color: Colors.white)
               ),
               const SizedBox(width: 15)

@@ -39,6 +39,7 @@ void incrementLessonProgress(String courseTitle) async {
     // Find the Courses instance for the given courseTitle
     final Courses course = enrolledBox.values.firstWhere((course) => course.title == courseTitle);
 
+    // ignore: unnecessary_null_comparison
     if (course != null) {
       // Increment lessonProgress
       course.lessonProgress = (course.lessonProgress ?? 0) + 1;

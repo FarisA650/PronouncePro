@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hive/hive.dart';
-import 'package:pronouncepro/db_functions/credentials_functions.dart';
-import 'package:pronouncepro/models/user_credentials.dart';
 import 'package:pronouncepro/splash_screen.dart';
 import 'package:pronouncepro/user_screens/login.dart';
 import 'package:shared_preferences/shared_preferences.dart';

@@ -44,7 +44,7 @@ class HomeState extends State<Home> {
             children: [
               GestureDetector(
                 onTap: () {
-                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Premium()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => Premium()));
                 },
                 child: buildPremiumContainer()
               ),

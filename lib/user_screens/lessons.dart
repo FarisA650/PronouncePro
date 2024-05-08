@@ -37,6 +37,7 @@ class DisplayLessonState extends State<DisplayLesson> {
         foregroundColor: Colors.white,
         title: Text(widget.level as String),
       ),
+      // ignore: unnecessary_null_comparison
       body: coursesBox == null
           ? const Center(child: CircularProgressIndicator())
           : ListView.builder(

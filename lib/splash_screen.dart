@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:pronouncepro/user_screens/home.dart';
+import 'package:pronouncepro/user_screens/navigation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:pronouncepro/user_screens/login.dart';
 import 'package:pronouncepro/admin_screens/admin_home.dart';
@@ -19,7 +19,7 @@ class SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(const Duration(seconds: 3), currentScreen); // Delay for 3 seconds
+    Timer(const Duration(seconds: 5), currentScreen); // Delay for 3 seconds
   }
 
   @override
@@ -49,7 +49,7 @@ class SplashScreenState extends State<SplashScreen> {
 
   void gotoUserHomePage() {
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => Home()));
+        context, MaterialPageRoute(builder: (context) => Navigation()));
   }
 
   void gotoLoginPage() {

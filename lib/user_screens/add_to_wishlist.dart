@@ -3,6 +3,7 @@ import 'package:pronouncepro/db_functions/course_functions.dart';
 import 'package:pronouncepro/models/courses.dart';
 import 'package:pronouncepro/user_screens/wishlist.dart';
 
+// ignore: must_be_immutable
 class AddToWishList extends StatefulWidget {
   late Courses course;
 
